@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mise en page 01</title>
+    <style>
+
+        body {
+             /* commence par annuler la marge par defaut pour profiter de tout l'espace de la page */
+            margin:0;
+        }
+
+    body * {
+        /* l'asterisque sert a TOUT selectionner
+        a faire preceder de "body" permet de dire que l'on veut tout selectionner a l'interieur de la balise body
+
+        img, p fonctionnerait aussi dans notre cas
+        */
+        width: 50%
+    }
+
+    p {
+    border: 1px solid black;
+    display: inline-block; /* le compromis entre inline et block : permet de dimensionner (block) ET de cohqbiter dans la largeur (inline) */
+    box-sizing: border-box; /* permet à la bordure de ne pas occuper d'espace supplementaire . voir : border-et-padiding.html*/
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- il a fallut coller toutes les images ensemble en raison d'un comfort specifique du HTML vis-à-vis des retours à la ligne : ils sont convertis en espaces , qui prennent un peu de largeur et empechent les images d'utiliser la totalité de l'espace -->
+    <img src="https://picsum.photos/200/300"><img src="https://picsum.photos/400/500"><img src="https://picsum.photos/200/300"><img src="https://picsum.photos/200/300">
+
+    <p> Un paragraphe </p><p> Un paragraphe </p><p> Un paragraphe </p><p> Un paragraphe </p>
+    <!-- par défaut on ne pourra pas obtenir des paragraphes cote-à-cote : les éléments block auront toujours une marge à doite qui complètera leur largeur -->
+    
+</body>
+</html>
