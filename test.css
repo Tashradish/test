@@ -1,0 +1,64 @@
+h1 {
+    color: darkred;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+h3 {
+    color: seagreen;
+    text-decoration: underline;
+}
+
+.column-unique-centree {
+    max-width: 600px;
+    margin: auto;
+}
+
+img {
+    width: 50%;
+}
+
+.img2 {
+    width: 50%;
+    align-content: center;
+    margin: 10px 100px
+}
+
+.img3 {
+    width: 80%;
+    align-content: center;
+    margin: 10px 10px
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.column {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    float: left;
+    /* width: 33.33%; */
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 100px;
+    margin: 1px 50px
+}
+
+.figcaption {
+    text-align: left;
+}
+
+.container {
+    display: flex;
+}
+
+.container {
+    margin: 0 10px;
+    flex: 1;
+    /* display: flex; */
+}
